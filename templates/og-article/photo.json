@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "og-article",
+  "title": "Article link preview",
+  "canvas": { "width": 1200, "height": 630, "background": "#0f172a" },
+  "layers": [
+    { "id": "photo", "type": "image", "name": "Photo", "src": "library:city", "x": 480, "y": 0, "width": 720, "height": 630, "fit": "cover", "mask": { "gradient": { "type": "linear", "angle": 0, "stops": [[0, "#000000"], [0.45, "#ffffff"]] } }, "filters": [{ "type": "look", "look": "cool", "amount": 0.6 }] },
+    { "id": "site", "type": "text", "name": "Site", "text": "YOURBLOG.COM", "x": 72, "y": 80, "font": "inter", "weight": 700, "size": 24, "letterSpacing": 4, "color": "#38bdf8" },
+    { "id": "title", "type": "text", "name": "Headline", "text": "10 hidden streets every visitor should walk", "x": 72, "y": 150, "width": 560, "font": "inter", "weight": 800, "size": 60, "lineHeight": 1.1, "color": "#ffffff" },
+    { "id": "meta", "type": "text", "name": "Meta", "text": "6 min read", "x": 72, "y": 520, "font": "inter", "size": 26, "color": "#94a3b8" },
+    { "id": "accent", "type": "shape", "name": "Accent", "shape": "rect", "x": 72, "y": 126, "width": 64, "height": 6, "radius": 3, "fill": "#38bdf8" }
+  ]
+}

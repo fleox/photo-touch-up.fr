@@ -1,0 +1,72 @@
+{
+  "version": 1,
+  "id": "product-white",
+  "title": "Product on white",
+  "canvas": {
+    "width": 2000,
+    "height": 2000,
+    "background": {
+      "type": "radial",
+      "stops": [
+        "#ffffff",
+        "#eef0f3"
+      ],
+      "cy": 0.45,
+      "radius": 1.1
+    }
+  },
+  "layers": [
+    {
+      "id": "floor-shadow",
+      "type": "shape",
+      "name": "Floor shadow",
+      "shape": "ellipse",
+      "x": 600,
+      "y": 1240,
+      "width": 800,
+      "height": 70,
+      "fill": "rgba(0,0,0,0.34)",
+      "filters": [
+        {
+          "type": "blur",
+          "radius": 30
+        }
+      ]
+    },
+    {
+      "id": "photo",
+      "type": "image",
+      "name": "Product",
+      "src": "library:product",
+      "x": 400,
+      "y": 360,
+      "effects": {
+        "dropShadow": {
+          "opacity": 0.18,
+          "angle": 90,
+          "distance": 10,
+          "blur": 18
+        }
+      },
+      "width": 1200,
+      "height": 1200,
+      "fit": "contain",
+      "mask": {
+        "src": "assets/masks/photo-cutout.png"
+      },
+      "filters": [
+        {
+          "type": "look",
+          "look": "clean",
+          "amount": 0.7
+        }
+      ],
+      "crop": {
+        "x": 800,
+        "y": 150,
+        "width": 640,
+        "height": 640
+      }
+    }
+  ]
+}

@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "social-quote",
+  "title": "Quote post",
+  "canvas": { "width": 1080, "height": 1080, "background": "#111111" },
+  "layers": [
+    { "id": "photo", "type": "image", "name": "Photo", "src": "library:landscape", "x": 0, "y": 0, "width": 1080, "height": 1080, "fit": "cover", "filters": [{ "type": "blur", "radius": 3 }, { "type": "look", "look": "matte", "amount": 0.8 }] },
+    { "id": "shade", "type": "fill", "name": "Shade", "fill": { "type": "linear", "angle": 90, "stops": [[0, "rgba(10,10,14,0.25)"], [1, "rgba(10,10,14,0.75)"]] } },
+    { "id": "quote-mark", "type": "text", "name": "Quote mark", "text": "“", "x": 90, "y": 170, "font": "playfair", "weight": 700, "size": 260, "color": "#f4d58d", "opacity": 0.9 },
+    { "id": "quote", "type": "text", "name": "Quote", "text": "The best view comes after the hardest climb.", "x": 120, "y": 420, "width": 840, "font": "playfair", "size": 76, "lineHeight": 1.15, "color": "#ffffff" },
+    { "id": "author", "type": "text", "name": "Author", "text": "— Anonymous", "x": 124, "y": 820, "font": "inter", "weight": 600, "size": 34, "letterSpacing": 1, "color": "#f4d58d" }
+  ]
+}

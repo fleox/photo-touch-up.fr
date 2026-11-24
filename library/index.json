@@ -1,0 +1,752 @@
+{
+  "assets": [
+    {
+      "id": "inter",
+      "kind": "font",
+      "family": "Inter",
+      "files": [
+        {
+          "path": "fonts/inter/inter-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/inter/inter-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/inter/inter-latin-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/inter/inter-latin-ext-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/inter/inter-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/inter/inter-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/inter/inter-latin-800-normal.woff2",
+          "weight": 800,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/inter/inter-latin-ext-800-normal.woff2",
+          "weight": 800,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Rasmus Andersson",
+      "source": "https://github.com/rsms/inter",
+      "tags": [
+        "sans",
+        "ui",
+        "neutral",
+        "body",
+        "headline"
+      ],
+      "description": "Neutral, highly legible UI sans: body text, captions, clean headlines (800 for bold titles).",
+      "kb": 217.9
+    },
+    {
+      "id": "montserrat",
+      "kind": "font",
+      "family": "Montserrat",
+      "files": [
+        {
+          "path": "fonts/montserrat/montserrat-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/montserrat/montserrat-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/montserrat/montserrat-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/montserrat/montserrat-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/montserrat/montserrat-latin-800-normal.woff2",
+          "weight": 800,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/montserrat/montserrat-latin-ext-800-normal.woff2",
+          "weight": 800,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Julieta Ulanovsky",
+      "source": "https://github.com/JulietaUla/Montserrat",
+      "tags": [
+        "sans",
+        "geometric",
+        "headline",
+        "poster"
+      ],
+      "description": "Geometric sans with wide caps: bold headlines, banners, social-media titles.",
+      "kb": 84.6
+    },
+    {
+      "id": "poppins",
+      "kind": "font",
+      "family": "Poppins",
+      "files": [
+        {
+          "path": "fonts/poppins/poppins-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/poppins/poppins-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/poppins/poppins-latin-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/poppins/poppins-latin-ext-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/poppins/poppins-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/poppins/poppins-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Indian Type Foundry (Jonny Pinhorn, Ninad Kale)",
+      "source": "https://github.com/itfoundry/Poppins",
+      "tags": [
+        "sans",
+        "geometric",
+        "friendly",
+        "headline",
+        "body"
+      ],
+      "description": "Friendly round geometric sans: modern headlines, buttons, short body copy.",
+      "kb": 39.2
+    },
+    {
+      "id": "playfair",
+      "kind": "font",
+      "family": "Playfair Display",
+      "files": [
+        {
+          "path": "fonts/playfair/playfair-display-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/playfair/playfair-display-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/playfair/playfair-display-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/playfair/playfair-display-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/playfair/playfair-display-latin-400-italic.woff2",
+          "weight": 400,
+          "style": "italic",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/playfair/playfair-display-latin-ext-400-italic.woff2",
+          "weight": 400,
+          "style": "italic",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Claus Eggers Sørensen",
+      "source": "https://github.com/clauseggers/Playfair",
+      "tags": [
+        "serif",
+        "display",
+        "elegant",
+        "editorial"
+      ],
+      "description": "High-contrast elegant serif: magazine covers, luxury/editorial titles, italic quotes.",
+      "kb": 102.8
+    },
+    {
+      "id": "bebas-neue",
+      "kind": "font",
+      "family": "Bebas Neue",
+      "files": [
+        {
+          "path": "fonts/bebas-neue/bebas-neue-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/bebas-neue/bebas-neue-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Ryoichi Tsunekawa (Dharma Type)",
+      "source": "https://github.com/dharmatype/Bebas-Neue",
+      "tags": [
+        "sans",
+        "condensed",
+        "display",
+        "caps",
+        "poster"
+      ],
+      "description": "All-caps condensed display: posters, thumbnails, big impactful headlines.",
+      "kb": 22.1
+    },
+    {
+      "id": "anton",
+      "kind": "font",
+      "family": "Anton",
+      "files": [
+        {
+          "path": "fonts/anton/anton-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/anton/anton-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Vernon Adams",
+      "source": "https://github.com/googlefonts/AntonFont",
+      "tags": [
+        "sans",
+        "condensed",
+        "display",
+        "impact",
+        "poster"
+      ],
+      "description": "Heavy condensed display sans: YouTube thumbnails, memes, punchy headlines.",
+      "kb": 48.3
+    },
+    {
+      "id": "oswald",
+      "kind": "font",
+      "family": "Oswald",
+      "files": [
+        {
+          "path": "fonts/oswald/oswald-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/oswald/oswald-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/oswald/oswald-latin-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/oswald/oswald-latin-ext-600-normal.woff2",
+          "weight": 600,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Vernon Adams, Kalapi Gajjar, Cyreal",
+      "source": "https://github.com/googlefonts/OswaldFont",
+      "tags": [
+        "sans",
+        "condensed",
+        "headline"
+      ],
+      "description": "Condensed gothic sans: headlines and labels that must fit narrow spaces.",
+      "kb": 47.1
+    },
+    {
+      "id": "lobster",
+      "kind": "font",
+      "family": "Lobster",
+      "files": [
+        {
+          "path": "fonts/lobster/lobster-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/lobster/lobster-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Pablo Impallari",
+      "source": "https://github.com/impallari/The-Lobster-Font",
+      "tags": [
+        "script",
+        "display",
+        "retro",
+        "bold"
+      ],
+      "description": "Bold retro connected script: playful titles, signage, vintage looks.",
+      "kb": 60.2
+    },
+    {
+      "id": "pacifico",
+      "kind": "font",
+      "family": "Pacifico",
+      "files": [
+        {
+          "path": "fonts/pacifico/pacifico-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/pacifico/pacifico-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Vernon Adams, Jacques Le Bailly, Botjo Nikoltchev, Ani Petrova",
+      "source": "https://github.com/googlefonts/Pacifico",
+      "tags": [
+        "script",
+        "brush",
+        "fun",
+        "surf"
+      ],
+      "description": "Casual brush script: fun, summery, surf-style titles and logos.",
+      "kb": 59
+    },
+    {
+      "id": "caveat",
+      "kind": "font",
+      "family": "Caveat",
+      "files": [
+        {
+          "path": "fonts/caveat/caveat-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/caveat/caveat-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/caveat/caveat-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/caveat/caveat-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Pablo Impallari (Impallari Type)",
+      "source": "https://github.com/googlefonts/caveat",
+      "tags": [
+        "handwriting",
+        "script",
+        "casual",
+        "notes"
+      ],
+      "description": "Natural handwriting: annotations, sticky-note text, personal captions.",
+      "kb": 134.7
+    },
+    {
+      "id": "dm-serif",
+      "kind": "font",
+      "family": "DM Serif Display",
+      "files": [
+        {
+          "path": "fonts/dm-serif/dm-serif-display-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/dm-serif/dm-serif-display-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Colophon Foundry",
+      "source": "https://github.com/googlefonts/dm-fonts",
+      "tags": [
+        "serif",
+        "display",
+        "editorial",
+        "headline"
+      ],
+      "description": "Contrasted display serif: elegant headlines, quotes, editorial posters.",
+      "kb": 34.7
+    },
+    {
+      "id": "space-grotesk",
+      "kind": "font",
+      "family": "Space Grotesk",
+      "files": [
+        {
+          "path": "fonts/space-grotesk/space-grotesk-latin-500-normal.woff2",
+          "weight": 500,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/space-grotesk/space-grotesk-latin-ext-500-normal.woff2",
+          "weight": 500,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/space-grotesk/space-grotesk-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/space-grotesk/space-grotesk-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Florian Karsten",
+      "source": "https://github.com/floriankarsten/space-grotesk",
+      "tags": [
+        "sans",
+        "grotesk",
+        "tech",
+        "modern"
+      ],
+      "description": "Quirky modern grotesk: tech/startup visuals, product labels, contemporary titles.",
+      "kb": 48.3
+    },
+    {
+      "id": "jetbrains-mono",
+      "kind": "font",
+      "family": "JetBrains Mono",
+      "files": [
+        {
+          "path": "fonts/jetbrains-mono/jetbrains-mono-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/jetbrains-mono/jetbrains-mono-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/jetbrains-mono/jetbrains-mono-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/jetbrains-mono/jetbrains-mono-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "JetBrains (Philipp Nurullin, Konstantin Bulenkov)",
+      "source": "https://github.com/JetBrains/JetBrainsMono",
+      "tags": [
+        "mono",
+        "code",
+        "tech"
+      ],
+      "description": "Monospace: code snippets, terminal looks, technical labels and numbers.",
+      "kb": 56
+    },
+    {
+      "id": "archivo-black",
+      "kind": "font",
+      "family": "Archivo Black",
+      "files": [
+        {
+          "path": "fonts/archivo-black/archivo-black-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/archivo-black/archivo-black-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "OFL-1.1",
+      "author": "Omnibus-Type",
+      "source": "https://github.com/Omnibus-Type/ArchivoBlack",
+      "tags": [
+        "sans",
+        "black",
+        "grotesk",
+        "headline",
+        "poster"
+      ],
+      "description": "Ultra-heavy grotesk: bold stickers, sale banners, strong short headlines.",
+      "kb": 32
+    },
+    {
+      "id": "roboto-slab",
+      "kind": "font",
+      "family": "Roboto Slab",
+      "files": [
+        {
+          "path": "fonts/roboto-slab/roboto-slab-latin-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/roboto-slab/roboto-slab-latin-ext-400-normal.woff2",
+          "weight": 400,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        },
+        {
+          "path": "fonts/roboto-slab/roboto-slab-latin-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0000-00FF,U+0131,U+0152-0153,U+02BB-02BC,U+02C6,U+02DA,U+02DC,U+0304,U+0308,U+0329,U+2000-206F,U+2074,U+20AC,U+2122,U+2191,U+2193,U+2212,U+2215,U+FEFF,U+FFFD"
+        },
+        {
+          "path": "fonts/roboto-slab/roboto-slab-latin-ext-700-normal.woff2",
+          "weight": 700,
+          "style": "normal",
+          "unicodeRange": "U+0100-02AF,U+0304,U+0308,U+0329,U+1E00-1E9F,U+1EF2-1EFF,U+2020,U+20A0-20AB,U+20AD-20C0,U+2113,U+2C60-2C7F,U+A720-A7FF"
+        }
+      ],
+      "license": "Apache-2.0",
+      "author": "Christian Robertson (Google)",
+      "source": "https://github.com/googlefonts/robotoslab",
+      "tags": [
+        "serif",
+        "slab",
+        "readable",
+        "body",
+        "headline"
+      ],
+      "description": "Sturdy slab serif: readable body text, news/blog headlines, quotes.",
+      "kb": 45.2
+    },
+    {
+      "id": "portrait",
+      "kind": "image",
+      "path": "images/portrait.jpg",
+      "width": 1600,
+      "height": 1068,
+      "license": "CC0-1.0",
+      "author": "William Stitt",
+      "source": "https://commons.wikimedia.org/wiki/File:Portrait_of_a_man_(Unsplash).jpg",
+      "title": "Portrait of a man",
+      "tags": [
+        "portrait",
+        "person",
+        "man",
+        "face",
+        "head-and-shoulders",
+        "bokeh"
+      ],
+      "description": "Head-and-shoulders portrait of a young man against a soft blurred autumn background: background removal, face retouching, portrait crops.",
+      "kb": 206.1
+    },
+    {
+      "id": "product",
+      "kind": "image",
+      "path": "images/product.jpg",
+      "width": 1600,
+      "height": 900,
+      "license": "CC0-1.0",
+      "author": "Ryan Holloway",
+      "source": "https://commons.wikimedia.org/wiki/File:Coffee_Mug_(Unsplash).jpg",
+      "title": "Enamel coffee mug on a table",
+      "tags": [
+        "product",
+        "mug",
+        "cup",
+        "object",
+        "table",
+        "plain-background"
+      ],
+      "description": "White enamel mug (skull print) on a wooden table, right of centre, in front of a blurred wooden backdrop with empty space on the left: product shots, cut-outs, packshot mock-ups, text overlays.",
+      "kb": 150.6
+    },
+    {
+      "id": "pet",
+      "kind": "image",
+      "path": "images/pet.jpg",
+      "width": 1600,
+      "height": 1067,
+      "license": "CC0-1.0",
+      "author": "Kamonnat Onnom",
+      "source": "https://commons.wikimedia.org/wiki/File:Furry_gray_cat_(Unsplash).jpg",
+      "title": "Furry gray cat",
+      "tags": [
+        "pet",
+        "cat",
+        "animal",
+        "fur",
+        "dark-background"
+      ],
+      "description": "Close-up of a long-haired gray cat with yellow eyes on a dark background: subject masking (fur edges), pet posters.",
+      "kb": 256.1
+    },
+    {
+      "id": "landscape",
+      "kind": "image",
+      "path": "images/landscape.jpg",
+      "width": 1600,
+      "height": 1063,
+      "license": "CC0-1.0",
+      "author": "Aleksandra Boguslawska",
+      "source": "https://commons.wikimedia.org/wiki/File:Mountain_lake_(Unsplash).jpg",
+      "title": "Mountain lake",
+      "tags": [
+        "landscape",
+        "nature",
+        "mountain",
+        "lake",
+        "reflection",
+        "forest",
+        "sky",
+        "autumn"
+      ],
+      "description": "Mountain peaks and autumn forest mirrored in a still lake under a blue sky: colour grading, sky replacement, wide banners.",
+      "kb": 390.9
+    },
+    {
+      "id": "city",
+      "kind": "image",
+      "path": "images/city.jpg",
+      "width": 1600,
+      "height": 1067,
+      "license": "CC0-1.0",
+      "author": "Eduardo Arcos",
+      "source": "https://commons.wikimedia.org/wiki/File:Quaint_City_Streets_(Unsplash).jpg",
+      "title": "Quaint city street",
+      "tags": [
+        "city",
+        "street",
+        "architecture",
+        "urban",
+        "europe",
+        "perspective"
+      ],
+      "description": "Narrow old-town street with patterned cobblestone pavement and facades: perspective, urban moods, travel visuals.",
+      "kb": 390.8
+    },
+    {
+      "id": "food",
+      "kind": "image",
+      "path": "images/food.jpg",
+      "width": 1600,
+      "height": 1067,
+      "license": "CC0-1.0",
+      "author": "Markus Spiske",
+      "source": "https://commons.wikimedia.org/wiki/File:Veggie_burger_on_plate_(Unsplash).jpg",
+      "title": "Veggie burger on a plate",
+      "tags": [
+        "food",
+        "burger",
+        "plate",
+        "restaurant",
+        "menu"
+      ],
+      "description": "Veggie burger on a blue-rimmed plate on a wooden table: menus, food promos, warm colour adjustments.",
+      "kb": 173
+    }
+  ]
+}

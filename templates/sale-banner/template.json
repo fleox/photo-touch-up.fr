@@ -1,0 +1,1 @@
+{ "id": "sale-banner", "title": "Sale banner", "description": "Wide web hero banner: gradient background, photo fading in from the right, big discount and a starburst badge.", "category": "ad", "tags": ["banner", "sale", "ecommerce", "hero"], "width": 1920, "height": 600, "slot": "photo" }

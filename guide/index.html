@@ -1,0 +1,210 @@
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <meta name="color-scheme" content="dark">
+    <title>Free online photo editor with layers and local AI — AgentPhoto Studio</title>
+    <meta name="description" content="Edit photos in your browser: layers, masks, background removal and Segment Anything selections that run on your computer, curves, 20 looks, text, templates and PNG / JPEG / WebP export. No account, no upload. Your AI agent can drive it too.">
+    <link rel="canonical" href="https://www.photo-touch-up.fr/guide/">
+    <link rel="alternate" hreflang="en" href="https://www.photo-touch-up.fr/guide/">
+    <link rel="alternate" hreflang="fr" href="https://www.photo-touch-up.fr/fr/guide/">
+    <link rel="alternate" hreflang="x-default" href="https://www.photo-touch-up.fr/guide/">
+    <meta property="og:type" content="website">
+    <meta property="og:site_name" content="AgentPhoto">
+    <meta property="og:title" content="Free online photo editor with layers and local AI — AgentPhoto Studio">
+    <meta property="og:description" content="Edit photos in your browser: layers, masks, background removal and Segment Anything selections that run on your computer, curves, 20 looks, text, templates and PNG / JPEG / WebP export. No account, no upload. Your AI agent can drive it too.">
+    <meta property="og:url" content="https://www.photo-touch-up.fr/guide/">
+    <meta property="og:image" content="https://www.photo-touch-up.fr/site/og.png">
+    <meta property="og:image:width" content="1280">
+    <meta property="og:image:height" content="640">
+    <meta property="og:locale" content="en_US">
+    <meta name="twitter:card" content="summary_large_image">
+    <meta name="twitter:image" content="https://www.photo-touch-up.fr/site/og.png">
+    <link rel="icon" href="data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' viewBox='0 0 32 32'%3E%3Cdefs%3E%3ClinearGradient id='g' x1='0' y1='0' x2='0' y2='1'%3E%3Cstop offset='0' stop-color='%232a2a30'/%3E%3Cstop offset='1' stop-color='%230c0c0f'/%3E%3C/linearGradient%3E%3ClinearGradient id='d' x1='0' y1='0' x2='1' y2='1'%3E%3Cstop offset='0' stop-color='%237aa5ff'/%3E%3Cstop offset='1' stop-color='%233d6bff'/%3E%3C/linearGradient%3E%3C/defs%3E%3Crect width='32' height='32' rx='7.5' fill='url(%23g)'/%3E%3Crect x='7' y='9' width='18' height='14' rx='2.5' fill='none' stroke='%23fff' stroke-width='2.2'/%3E%3Cpath d='M9 21l5-5 3 3 2.5-2.5L23 20' fill='none' stroke='%23fff' stroke-width='1.8' stroke-linejoin='round'/%3E%3Ccircle cx='20.5' cy='13.5' r='2' fill='url(%23d)'/%3E%3C/svg%3E">
+    <link rel="preload" href="/site/fonts/inter-latin-400-normal.woff2" as="font" type="font/woff2" crossorigin>
+    <link rel="stylesheet" href="/site/style.css">
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"BreadcrumbList","itemListElement":[{"@type":"ListItem","position":1,"name":"AgentPhoto Studio","item":"https://www.photo-touch-up.fr/"},{"@type":"ListItem","position":2,"name":"Guide","item":"https://www.photo-touch-up.fr/guide/"}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"FAQPage","mainEntity":[{"@type":"Question","name":"Is it really free?","acceptedAnswer":{"@type":"Answer","text":"Yes. No account, no subscription, no ads and no watermark. AgentPhoto is source available on GitHub."}},{"@type":"Question","name":"Are my photos uploaded to a server?","acceptedAnswer":{"@type":"Answer","text":"No. Photos and projects are stored in your browser (IndexedDB) and every edit and export happens on your computer. The site only serves the editor's files. The network is used to download an AI model the first time you use it (from Hugging Face, after you agree) and, if you choose to use it, by the optional assistant, which sends your previews to Claude with your own API key."}},{"@type":"Question","name":"Where are my projects saved?","acceptedAnswer":{"@type":"Answer","text":"In this browser, on this computer. They are listed under Recent on the start screen. Clearing the site's data in your browser deletes them, so export what you want to keep."}},{"@type":"Question","name":"How does background removal work without a server?","acceptedAnswer":{"@type":"Answer","text":"The model runs in the page with WebAssembly. RMBG-1.4 (168 MB) is the default; MODNet (25 MB) is made for portraits. Both download once and stay in your browser's cache."}},{"@type":"Question","name":"Can I use it for commercial work?","acceptedAnswer":{"@type":"Answer","text":"Fonts and sample photos are free for commercial images. The default background-removal model, RMBG-1.4, is licensed for non-commercial use only: for commercial work use MODNet (people) or Segment Anything selections. AgentPhoto itself is licensed under PolyForm Noncommercial 1.0.0; commercial use of the software needs the author's authorization."}},{"@type":"Question","name":"Which formats can I open and export?","acceptedAnswer":{"@type":"Answer","text":"Open JPEG, PNG, WebP and the other images your browser can read. Export PNG, JPEG, WebP and AVIF (AVIF where the browser can encode it)."}},{"@type":"Question","name":"Does it work on a phone?","acceptedAnswer":{"@type":"Answer","text":"The editor is designed for a computer screen with a mouse or trackpad. Use a recent Chrome, Edge, Firefox or Safari."}},{"@type":"Question","name":"What happened to Photo Touch-Up?","acceptedAnswer":{"@type":"Answer","text":"Photo Touch-Up, the editor that used to live at this address, became AgentPhoto: a new engine with non-destructive layers, local AI and templates, which AI agents can also drive."}}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Remove a background","step":[{"@type":"HowToStep","position":1,"text":"Open your photo and select its layer."},{"@type":"HowToStep","position":2,"text":"In Properties → Mask, choose the model and click Remove background (the first time, the model downloads once)."},{"@type":"HowToStep","position":3,"text":"Zoom on the edges; paint on the mask to fix a detail."},{"@type":"HowToStep","position":4,"text":"Export as PNG or WebP to keep the transparency, or add a fill layer below as a new background."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Select an object with AI","step":[{"@type":"HowToStep","position":1,"text":"Pick Quick AI select (Q) in the tool rail."},{"@type":"HowToStep","position":2,"text":"Click the object; Alt-click what should be left out."},{"@type":"HowToStep","position":3,"text":"Apply, then mask the layer, copy the object to a new layer or add a masked adjustment."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Resize a photo for social media","step":[{"@type":"HowToStep","position":1,"text":"Click an empty area of the canvas to see the Canvas settings."},{"@type":"HowToStep","position":2,"text":"Choose a preset (square post, story, Open Graph, YouTube…) and resize the canvas, or keep it and choose the size in Export."},{"@type":"HowToStep","position":3,"text":"In Export, Cover crops to fill the size, Contain adds margins."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Crop and straighten","step":[{"@type":"HowToStep","position":1,"text":"Pick the Crop tool (C), drag the handles or choose a ratio, then press Enter."},{"@type":"HowToStep","position":2,"text":"To straighten, select the photo and set its rotation in Properties → Transform."},{"@type":"HowToStep","position":3,"text":"Rotate the whole image by 90° or flip it in the Canvas settings."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Fix colour and light","step":[{"@type":"HowToStep","position":1,"text":"Select the photo, open Filters."},{"@type":"HowToStep","position":2,"text":"Click Auto enhance: it measures the photo and adds the corrections it needs. Or add exposure, white balance, curves or vibrance and tune them live."},{"@type":"HowToStep","position":3,"text":"Hide a filter with its eye to compare; nothing is final until you export."}]}</script>
+    <script type="application/ld+json">{"@context":"https://schema.org","@type":"HowTo","name":"Add text to an image","step":[{"@type":"HowToStep","position":1,"text":"Pick the Text tool (T) and click on the photo."},{"@type":"HowToStep","position":2,"text":"Type, then choose the font, size, colour or gradient and alignment in Properties."},{"@type":"HowToStep","position":3,"text":"Add a drop shadow or a stroke in Effects so it stays readable on any photo."}]}</script>
+  </head>
+  <body>
+<header class="site">
+  <div class="wrap">
+    <a class="brand" href="/guide/"><svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a30"/><stop offset="1" stop-color="#0c0c0f"/></linearGradient><linearGradient id="ld" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7aa5ff"/><stop offset="1" stop-color="#3d6bff"/></linearGradient></defs><rect width="32" height="32" rx="7.5" fill="url(#lg)"/><rect x="7" y="9" width="18" height="14" rx="2.5" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M9 21l5-5 3 3 2.5-2.5L23 20" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20.5" cy="13.5" r="2" fill="url(#ld)"/></svg><span>AgentPhoto</span></a>
+    <nav aria-label="Features">
+      <a href="#features">Features</a>
+      <a href="#tasks">How to</a>
+      <a href="#agents">For AI agents</a>
+      <a href="#faq">FAQ</a>
+    </nav>
+    <div class="actions">
+      <a class="lang" href="/fr/guide/" hreflang="fr" lang="fr">Français</a>
+      <a class="gh" href="https://github.com/fleox/agentphoto" aria-label="GitHub"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg></a>
+      <a class="btn btn-primary btn-sm" href="/?lang=en">Open the editor</a>
+    </div>
+  </div>
+</header>
+<main>
+  <section class="hero">
+    <div class="wrap">
+      <p class="kicker">Free · No account · Nothing uploaded</p>
+      <h1>A real photo editor in your browser, with AI that runs on your computer.</h1>
+      <p class="lead">Layers, masks, background removal, smart selections, curves, looks, text and templates. Your photos stay on your computer — and the same studio can be driven by your AI agent.</p>
+      <div class="cta">
+        <a class="btn btn-primary" href="/?lang=en">Open the editor <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+        <a class="btn btn-ghost" href="#agents">Let an AI agent drive it</a>
+      </div>
+      <figure class="frame hero-shot"><img src="/site/img/en/editor.jpg" width="1600" height="1000" alt="The AgentPhoto Studio editor: layers, inspector and a photo on the canvas" fetchpriority="high"></figure>
+    </div>
+  </section>
+
+  <section class="why">
+    <div class="wrap">
+      <h2>A photo editor that respects your time and your photos.</h2>
+      <div class="grid3">
+        <div class="card"><h3>Free, no account</h3><p>Open the page and edit. No sign-up, no trial, no ads, no watermark on exports.</p></div>
+        <div class="card"><h3>Your photos stay with you</h3><p>Photos and projects are stored in your browser. Editing and exports happen on your computer: nothing is uploaded.</p></div>
+        <div class="card"><h3>AI on your computer</h3><p>Background removal and Segment Anything selections run in the page. The model downloads once, after you agree, then stays in your browser's cache.</p></div>
+        <div class="card"><h3>Non-destructive</h3><p>Every edit is a layer, a filter, a mask or a setting you can change later. Your original photo is never modified.</p></div>
+        <div class="card"><h3>What you see is what you export</h3><p>The preview and the export use the same engine, at full resolution.</p></div>
+        <div class="card"><h3>Built for agents too</h3><p>The same studio is a command-line tool and an MCP server: Claude Code or any AI agent retouches photos and checks its own work.</p></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="features" class="features">
+    <div class="wrap">
+      <h2>Everything you need for everyday photo work.</h2>
+      <article class="feature" id="layers">
+        <div class="text"><h3>Layers, groups and blend modes</h3><p>Stack photos, text, shapes, fills and adjustment layers. Groups, 16 blend modes, opacity, clipping to the layer below, alignment and a precise transform panel (position, size, rotation, flip).</p></div>
+        <figure class="frame"><img src="/site/img/en/editor.jpg" width="1600" height="1000" alt="Layers, groups and blend modes" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature flip" id="selections">
+        <div class="text"><h3>Selections and quick AI select</h3><p>Marquee, lasso and polygonal lasso, magic wand, and quick AI select: click the object, Alt-click to exclude, Segment Anything finds its outline. Turn a selection into a mask, a new layer, a fill or a masked adjustment.</p></div>
+        <figure class="frame"><img src="/site/img/en/ai-select.jpg" width="1600" height="1000" alt="Selections and quick AI select" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature" id="cutout">
+        <div class="text"><h3>Background removal</h3><p>One click removes the background of a photo with a local model (RMBG-1.4, or MODNet for portraits). The result is an editable mask: refine it with the brush, add a new background, a shadow or a sticker outline.</p></div>
+        <figure class="frame"><img src="/site/img/en/cutout.jpg" width="1600" height="1000" alt="Background removal" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature flip" id="filters">
+        <div class="text"><h3>28 filters with live parameters</h3><p>Exposure, levels, curves with a curve editor, shadows / highlights, white balance, vibrance, hue / saturation, colour balance, blur, surface blur for smooth skin, sharpen, clarity, grain, vignette, and auto tone, contrast and colour. Each filter stays editable.</p></div>
+        <figure class="frame"><img src="/site/img/en/filters.jpg" width="1600" height="1000" alt="28 filters with live parameters" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature" id="looks">
+        <div class="text"><h3>20 looks in one click</h3><p>Black &amp; white, noir, vintage, polaroid, cinema, film, matte, golden hour… with a strength slider, on one layer or on everything below an adjustment layer.</p></div>
+        <figure class="frame"><img src="/site/img/en/looks.jpg" width="1600" height="1000" alt="20 looks in one click" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature flip" id="text">
+        <div class="text"><h3>Text, shapes and layer effects</h3><p>Editable text with 15 bundled fonts, gradients, label backgrounds and wrapping. Rectangles, ellipses, lines, polygons and stars. Drop shadow, outer glow, inner shadow, stroke and colour overlay.</p></div>
+        <figure class="frame"><img src="/site/img/en/text.jpg" width="1600" height="1000" alt="Text, shapes and layer effects" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature" id="templates">
+        <div class="text"><h3>Templates and social sizes</h3><p>Start from a photo, a sample, a blank canvas at a social size (Open Graph, square post, story, YouTube thumbnail, banners…) or one of 8 templates where your photo replaces the template's.</p></div>
+        <figure class="frame"><img src="/site/img/en/start.jpg" width="1600" height="1000" alt="Templates and social sizes" loading="lazy" decoding="async"></figure>
+      </article>
+      <article class="feature flip" id="export">
+        <div class="text"><h3>Export PNG, JPEG and WebP</h3><p>Choose the format (AVIF too, where the browser can encode it), quality and size (original, a preset, a custom size or a scale), keep transparency or flatten it, and see the file before you download it.</p></div>
+        <figure class="frame"><img src="/site/img/en/export.jpg" width="1600" height="1000" alt="Export PNG, JPEG and WebP" loading="lazy" decoding="async"></figure>
+      </article>
+      <p class="more">Also: brush, eraser and clone stamp (each stroke is a new file, your photo is untouched), crop, eyedropper, colour-range masks, gradient and shape masks, undo / redo, English and French interface.</p>
+    </div>
+  </section>
+
+  <section class="steps">
+    <div class="wrap">
+      <h2>Your first edit in three steps.</h2>
+      <ol class="grid3">
+        <li class="card"><h3>Open the editor</h3><p>No install: it runs in Chrome, Edge, Firefox or Safari on a computer.</p></li>
+        <li class="card"><h3>Drop your photo</h3><p>Or start from a sample photo, a social size or a template. It becomes a project saved in your browser.</p></li>
+        <li class="card"><h3>Edit and export</h3><p>Adjust, cut out, add text, then Export: the file is saved to your Downloads.</p></li>
+      </ol>
+    </div>
+  </section>
+
+  <section id="tasks" class="tasks">
+    <div class="wrap">
+      <h2>Common tasks, step by step.</h2>
+      <div class="grid2">
+        <div class="card"><h3>Remove a background</h3><ol><li>Open your photo and select its layer.</li><li>In Properties → Mask, choose the model and click Remove background (the first time, the model downloads once).</li><li>Zoom on the edges; paint on the mask to fix a detail.</li><li>Export as PNG or WebP to keep the transparency, or add a fill layer below as a new background.</li></ol></div>
+        <div class="card"><h3>Select an object with AI</h3><ol><li>Pick Quick AI select (Q) in the tool rail.</li><li>Click the object; Alt-click what should be left out.</li><li>Apply, then mask the layer, copy the object to a new layer or add a masked adjustment.</li></ol></div>
+        <div class="card"><h3>Resize a photo for social media</h3><ol><li>Click an empty area of the canvas to see the Canvas settings.</li><li>Choose a preset (square post, story, Open Graph, YouTube…) and resize the canvas, or keep it and choose the size in Export.</li><li>In Export, Cover crops to fill the size, Contain adds margins.</li></ol></div>
+        <div class="card"><h3>Crop and straighten</h3><ol><li>Pick the Crop tool (C), drag the handles or choose a ratio, then press Enter.</li><li>To straighten, select the photo and set its rotation in Properties → Transform.</li><li>Rotate the whole image by 90° or flip it in the Canvas settings.</li></ol></div>
+        <div class="card"><h3>Fix colour and light</h3><ol><li>Select the photo, open Filters.</li><li>Click Auto enhance: it measures the photo and adds the corrections it needs. Or add exposure, white balance, curves or vibrance and tune them live.</li><li>Hide a filter with its eye to compare; nothing is final until you export.</li></ol></div>
+        <div class="card"><h3>Add text to an image</h3><ol><li>Pick the Text tool (T) and click on the photo.</li><li>Type, then choose the font, size, colour or gradient and alignment in Properties.</li><li>Add a drop shadow or a stroke in Effects so it stays readable on any photo.</li></ol></div>
+      </div>
+    </div>
+  </section>
+
+  <section id="agents" class="agents">
+    <div class="wrap">
+      <h2>The photo studio your AI agent can run.</h2>
+      <p class="lead">This editor is the visual side of AgentPhoto, a command-line tool and MCP server for AI agents. Claude Code, Claude Desktop, Cursor or any MCP client opens your photo, edits the same non-destructive document, renders a preview, looks at it, fixes what it sees and exports — on your computer.</p>
+      <div class="agents-grid">
+        <div>
+          <ul class="points"><li>Ask in plain words: “remove the background of product.jpg and put it on white with a soft shadow”, “make a YouTube thumbnail from this photo with the title …”, “export this for Instagram, story and Open Graph”.</li><li>The agent checks its work: every change is rendered headless and looked at before the next one.</li><li>Then finish by hand: the agent opens the same project in this Studio, and changes appear live.</li></ul>
+          <p class="label">In Claude Code:</p>
+          <pre><code>/plugin marketplace add fleox/agentphoto
+/plugin install agentphoto@agentphoto</code></pre>
+          <p class="label">Other agents (MCP), the CLI and the Hermes Agent skills:</p>
+          <pre><code>npx -y @fleox/agentphoto@0.1.2 mcp</code></pre>
+          <div class="cta">
+            <a class="btn btn-primary" href="https://github.com/fleox/agentphoto"><svg viewBox="0 0 16 16" width="16" height="16" aria-hidden="true"><path fill="currentColor" d="M8 0C3.58 0 0 3.58 0 8c0 3.54 2.29 6.53 5.47 7.59.4.07.55-.17.55-.38 0-.19-.01-.82-.01-1.49-2.01.37-2.53-.49-2.69-.94-.09-.23-.48-.94-.82-1.13-.28-.15-.68-.52-.01-.53.63-.01 1.08.58 1.23.82.72 1.21 1.87.87 2.33.66.07-.52.28-.87.51-1.07-1.78-.2-3.64-.89-3.64-3.95 0-.87.31-1.59.82-2.15-.08-.2-.36-1.02.08-2.12 0 0 .67-.21 2.2.82.64-.18 1.32-.27 2-.27.68 0 1.36.09 2 .27 1.53-1.04 2.2-.82 2.2-.82.44 1.1.16 1.92.08 2.12.51.56.82 1.27.82 2.15 0 3.07-1.87 3.75-3.65 3.95.29.25.54.73.54 1.48 0 1.07-.01 1.93-.01 2.2 0 .21.15.46.55.38A8.013 8.013 0 0016 8c0-4.42-3.58-8-8-8z"/></svg> AgentPhoto on GitHub</a>
+            <a class="btn btn-ghost" href="https://www.npmjs.com/package/@fleox/agentphoto">npm package</a>
+          </div>
+        </div>
+        <figure class="frame video">
+          <video controls preload="none" playsinline poster="/site/video-poster.jpg" aria-label="Watch the AgentPhoto demo">
+            <source src="/site/agentphoto-demo.mp4" type="video/mp4">
+          </video>
+          <figcaption>The 2-minute demo: an agent retouches, cuts out and designs, then the Studio.</figcaption>
+        </figure>
+      </div>
+      <figure class="diagram"><img src="/site/how-it-works.png" width="1800" height="815" alt="" loading="lazy" decoding="async"></figure>
+    </div>
+  </section>
+
+  <section id="faq" class="faq">
+    <div class="wrap narrow">
+      <h2>Good questions, honest answers.</h2>
+      <details><summary>Is it really free?</summary><p>Yes. No account, no subscription, no ads and no watermark. AgentPhoto is source available on GitHub.</p></details>
+      <details><summary>Are my photos uploaded to a server?</summary><p>No. Photos and projects are stored in your browser (IndexedDB) and every edit and export happens on your computer. The site only serves the editor's files. The network is used to download an AI model the first time you use it (from Hugging Face, after you agree) and, if you choose to use it, by the optional assistant, which sends your previews to Claude with your own API key.</p></details>
+      <details><summary>Where are my projects saved?</summary><p>In this browser, on this computer. They are listed under Recent on the start screen. Clearing the site's data in your browser deletes them, so export what you want to keep.</p></details>
+      <details><summary>How does background removal work without a server?</summary><p>The model runs in the page with WebAssembly. RMBG-1.4 (168 MB) is the default; MODNet (25 MB) is made for portraits. Both download once and stay in your browser's cache.</p></details>
+      <details><summary>Can I use it for commercial work?</summary><p>Fonts and sample photos are free for commercial images. The default background-removal model, RMBG-1.4, is licensed for non-commercial use only: for commercial work use MODNet (people) or Segment Anything selections. AgentPhoto itself is licensed under PolyForm Noncommercial 1.0.0; commercial use of the software needs the author's authorization.</p></details>
+      <details><summary>Which formats can I open and export?</summary><p>Open JPEG, PNG, WebP and the other images your browser can read. Export PNG, JPEG, WebP and AVIF (AVIF where the browser can encode it).</p></details>
+      <details><summary>Does it work on a phone?</summary><p>The editor is designed for a computer screen with a mouse or trackpad. Use a recent Chrome, Edge, Firefox or Safari.</p></details>
+      <details><summary>What happened to Photo Touch-Up?</summary><p>Photo Touch-Up, the editor that used to live at this address, became AgentPhoto: a new engine with non-destructive layers, local AI and templates, which AI agents can also drive.</p></details>
+    </div>
+  </section>
+
+  <section class="final">
+    <div class="wrap">
+      <h2>Edit your next photo now.</h2>
+      <a class="btn btn-primary" href="/?lang=en">Open the editor <svg viewBox="0 0 16 16" width="14" height="14" aria-hidden="true"><path fill="none" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round" d="M3 8h10M9 4l4 4-4 4"/></svg></a>
+      <p>Nothing to install, nothing uploaded.</p>
+    </div>
+  </section>
+</main>
+<footer class="site">
+  <div class="wrap">
+    <div class="foot-brand"><svg class="logo" viewBox="0 0 32 32" width="28" height="28" aria-hidden="true"><defs><linearGradient id="lg" x1="0" y1="0" x2="0" y2="1"><stop offset="0" stop-color="#2a2a30"/><stop offset="1" stop-color="#0c0c0f"/></linearGradient><linearGradient id="ld" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="#7aa5ff"/><stop offset="1" stop-color="#3d6bff"/></linearGradient></defs><rect width="32" height="32" rx="7.5" fill="url(#lg)"/><rect x="7" y="9" width="18" height="14" rx="2.5" fill="none" stroke="#fff" stroke-width="2.2"/><path d="M9 21l5-5 3 3 2.5-2.5L23 20" fill="none" stroke="#fff" stroke-width="1.8" stroke-linejoin="round"/><circle cx="20.5" cy="13.5" r="2" fill="url(#ld)"/></svg><div><strong>AgentPhoto — the photo studio your AI agent can run.</strong><br><span>Source available under PolyForm Noncommercial 1.0.0.</span></div></div>
+    <nav>
+      <a href="/?lang=en">Editor</a>
+      <a href="/guide/">Guide</a>
+      <a href="https://github.com/fleox/agentphoto">GitHub</a>
+      <a href="https://www.npmjs.com/package/@fleox/agentphoto">npm</a>
+      <a href="https://github.com/fleox/agentphoto/tree/main/docs">Documentation</a>
+      <a href="https://github.com/fleox/agentphoto/blob/main/docs/security.md">Privacy</a>
+      <a href="/fr/guide/" hreflang="fr">Français</a>
+    </nav>
+  </div>
+</footer>
+  </body>
+</html>

@@ -1,0 +1,125 @@
+{
+  "version": 1,
+  "id": "sale-banner",
+  "title": "Sale banner",
+  "canvas": {
+    "width": 1920,
+    "height": 600,
+    "background": {
+      "type": "linear",
+      "angle": 0,
+      "stops": [
+        "#ff5f6d",
+        "#ffc371"
+      ]
+    }
+  },
+  "layers": [
+    {
+      "id": "photo",
+      "type": "image",
+      "name": "Photo",
+      "src": "library:product",
+      "x": 900,
+      "y": 0,
+      "width": 1020,
+      "height": 600,
+      "fit": "cover",
+      "mask": {
+        "gradient": {
+          "type": "linear",
+          "angle": 0,
+          "stops": [
+            [
+              0,
+              "#000000"
+            ],
+            [
+              0.35,
+              "#ffffff"
+            ]
+          ]
+        }
+      }
+    },
+    {
+      "id": "title",
+      "type": "text",
+      "name": "Title",
+      "text": "SUMMER SALE",
+      "x": 110,
+      "y": 120,
+      "font": "anton",
+      "size": 128,
+      "letterSpacing": 2,
+      "color": "#ffffff",
+      "effects": {
+        "dropShadow": {
+          "opacity": 0.25,
+          "blur": 0,
+          "distance": 8
+        }
+      }
+    },
+    {
+      "id": "subtitle",
+      "type": "text",
+      "name": "Subtitle",
+      "text": "Up to 40% off everything — this week only",
+      "x": 116,
+      "y": 330,
+      "font": "poppins",
+      "weight": 600,
+      "size": 40,
+      "color": "#3b0a14"
+    },
+    {
+      "id": "badge",
+      "type": "shape",
+      "name": "Badge",
+      "shape": "star",
+      "sides": 14,
+      "innerRadius": 0.82,
+      "x": 900,
+      "y": 50,
+      "width": 200,
+      "height": 200,
+      "fill": "#3b0a14",
+      "rotation": 12
+    },
+    {
+      "id": "badge-text",
+      "type": "text",
+      "name": "Badge text",
+      "text": "-40%",
+      "x": 900,
+      "y": 118,
+      "width": 200,
+      "align": "center",
+      "font": "archivo-black",
+      "size": 54,
+      "color": "#ffc371",
+      "rotation": 12
+    },
+    {
+      "id": "cta",
+      "type": "text",
+      "name": "Button",
+      "text": "Shop now",
+      "x": 120,
+      "y": 440,
+      "font": "poppins",
+      "weight": 700,
+      "size": 34,
+      "color": "#ffffff",
+      "background": {
+        "color": "#3b0a14",
+        "padding": [
+          34,
+          18
+        ],
+        "radius": 40
+      }
+    }
+  ]
+}

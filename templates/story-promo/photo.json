@@ -1,0 +1,13 @@
+{
+  "version": 1,
+  "id": "story-promo",
+  "title": "Story promo",
+  "canvas": { "width": 1080, "height": 1920, "background": "#000000" },
+  "layers": [
+    { "id": "photo", "type": "image", "name": "Photo", "src": "library:food", "x": 0, "y": 0, "width": 1080, "height": 1920, "fit": "cover", "filters": [{ "type": "vibrance", "vibrance": 25 }, { "type": "look", "look": "golden-hour", "amount": 0.6 }] },
+    { "id": "fade", "type": "fill", "name": "Bottom fade", "fill": { "type": "linear", "angle": 90, "stops": [[0.45, "rgba(0,0,0,0)"], [1, "rgba(0,0,0,0.85)"]] } },
+    { "id": "tag", "type": "text", "name": "Tag", "text": "NEW ON THE MENU", "x": 90, "y": 1180, "font": "montserrat", "weight": 800, "size": 36, "letterSpacing": 4, "color": "#ffd166" },
+    { "id": "title", "type": "text", "name": "Title", "text": "Fresh & homemade", "x": 86, "y": 1240, "width": 900, "font": "lobster", "size": 150, "lineHeight": 1.05, "color": "#ffffff", "effects": { "dropShadow": { "opacity": 0.5, "blur": 24, "distance": 6 } } },
+    { "id": "cta", "type": "text", "name": "Call to action", "text": "Order now  →", "x": 90, "y": 1660, "font": "poppins", "weight": 700, "size": 46, "color": "#1a1a1a", "background": { "color": "#ffffff", "padding": [40, 22], "radius": 60 } }
+  ]
+}

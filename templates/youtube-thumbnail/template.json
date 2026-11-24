@@ -1,0 +1,1 @@
+{ "id": "youtube-thumbnail", "title": "YouTube thumbnail", "description": "Bold 16:9 thumbnail: big condensed title, subject with a white outline (run remove_background on the photo layer for a cut-out), punchy gradient.", "category": "thumbnail", "tags": ["youtube", "video", "cutout", "bold"], "width": 1280, "height": 720, "slot": "photo" }
